@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts/dmmono-regular.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'DM Mono';
+    font-style: bold;
+    font-weight: 500;
+    font-display: swap;
+    src: url(fonts/dmmono-medium.woff2) format('woff2');
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  padding: 0;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #141C1C;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --toastify-color-success: #2CD9CE;
+  --toastify-font-family: 'DM Mono';
+  --toastify-color-progress-dark: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: start;
+  min-width: 320px;
+  min-height: 100vh;
+}
